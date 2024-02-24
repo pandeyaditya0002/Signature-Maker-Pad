@@ -39,5 +39,5 @@ Remember to keep an eye on the repository for any updates or announcements relat
 
 Thank you for choosing Signature Pad! We hope it brings a seamless signature capture experience to your web applications. If you have any further questions or need assistance, feel free to reach out to the community or the project maintainers. Happy coding!
 
-Made with ❤️ by Aditya Pandey
+Made with ❤️ by (Aditya Pandey)
 # Signature-Maker-Pad
