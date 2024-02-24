@@ -19,12 +19,12 @@ Signature Pad is a lightweight JavaScript library for adding a signature pad fun
 
 Signature Pad was designed with simplicity in mind. You can integrate it into your projects with just a few lines of code:
 
-* [Usage]()
+* [Usage](https://github.com/pandeyaditya0002/Signature-Maker-Pad)
 
 ```// Now go ahead and let your users sign that killer signature 👌!```
 
 
-To see Signature Pad in action and explore different usage scenarios, you can check out the examples and demos provided in the [GitHub repository](). These examples demonstrate various features and customization options available with Signature Pad.
+To see Signature Pad in action and explore different usage scenarios, you can check out the examples and demos provided in the [GitHub repository](https://github.com/pandeyaditya0002/Signature-Maker-Pad). These examples demonstrate various features and customization options available with Signature Pad.
 
 
 
