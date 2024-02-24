@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS7BTX4Q1K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TS7BTX4Q1K');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signature Pad: A Versatile Tool for Capturing Digital Signatures - GitHub</title>
+    <meta name="description" content="Signature Pad is a powerful tool that allows users to easily capture and store handwritten signatures digitally. Whether you need to sign documents online or collect signatures on the go, Signature Pad provides a seamless and reliable solution. With its intuitive interface and advanced features, Signature Pad is the perfect choice for businesses, organizations, and individuals who value efficiency and accuracy. Discover the power of Signature Pad today and start streamlining your signature workflow.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!--Icon-->
+    <link rel="shortcut icon" type="image/png" href="https://repository-images.githubusercontent.com/640015149/94c4e46e-10b0-453f-a2bf-57a0c45a5f26">
+
+    <!-- Facebook, WhatsApp and Twitter integration -->
+    <meta property="og:title" content="Signature Pad: A Versatile Tool for Capturing Digital Signatures"/>
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/640015149/94c4e46e-10b0-453f-a2bf-57a0c45a5f26"/>
+    <meta property="og:site_name" content="GitHub"/>
+    <meta property="og:description" content="Signature Pad is a powerful tool that allows users to easily capture and store handwritten signatures digitally. Whether you need to sign documents online or collect signatures on the go, Signature Pad provides a seamless and reliable solution. With its intuitive interface and advanced features, Signature Pad is the perfect choice for businesses, organizations, and individuals who value efficiency and accuracy. Discover the power of Signature Pad today and start streamlining your signature workflow."/>
+    <meta name="twitter:title" content="Signature Pad: A Versatile Tool for Capturing Digital Signatures" />
+    <meta name="twitter:image" content="https://repository-images.githubusercontent.com/640015149/94c4e46e-10b0-453f-a2bf-57a0c45a5f26" />
+    <meta name="twitter:card" content="" />
+    <link rel="stylesheet" href="assets/css/sp.css">
+    <audio id="knockSound" src="assets/sfx/knock.mp3"></audio>
+    <audio id="scribbleSound" src="assets/sfx/scribbling.mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function start() {
+        $(".start").remove();$(".s-p--body canvas").show();
+      }
+    </script>
+</head>
+<body>
+    <div id="s-p" class="s-p">
+        <div class="s-p--body">
+          <div class="start">
+            <button onclick='start()'>
+              Sign
+            </button>
+          </div>
+          <canvas></canvas>
+        </div>
+        <div class="s-p--footer">
+          <div class="description">Sign above</div>
+          <div class="s-p--actions">
+            <div>
+              <button type="button" class="button clear" data-action="clear">Clear</button>
+              <button type="button" class="button" data-action="change-color">Change color</button>
+              <button type="button" class="button" data-action="undo">Undo</button>
+              <button style="background-color: cadetblue; display: none;" type="button" class="button" data-action="erase" disabled>Erase</button>
+    
+            </div>
+            <div>
+              <button type="button" class="button save" data-action="png">Save as PNG</button>
+              <button type="button" class="button save" data-action="jpg">Save as JPG</button>
+              <button type="button" class="button save" data-action="svg">Save as SVG</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Color palette -->
+    <div class="color-palette">
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+      <span class="theme-color"></span>
+    </div>
+    <!-- Signature and Bezier Script Install -->
+    <script src="assets/js/signature.js"></script>
+    <!-- Import SP obbject and bind button functions with listeners and device events -->
+    <script src="assets/js/index.js"></script>
+    <!-- Color Palette -->
+    <script src="assets/js/color-palette.js"></script>
+</body>
+</html>

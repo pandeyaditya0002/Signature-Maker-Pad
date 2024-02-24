@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #365173, #0c131b);
+  font-family: 'Quicksand', Sans-Serif;
+}
+
+button {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background-color: #203146;
+  cursor: pointer;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+  width: 70px;
+  font-size: 9px;
+  margin: 1px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+
+.s-p {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 460px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.s-p::hover {
+  box-shadow: 0px 15px 50px -15px #365173;
+}
+
+.s-p::before,
+.s-p::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 40%;
+  height: 10px;
+  bottom: 10px;
+  background: transparent;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.s-p::before {
+  left: 20px;
+  -webkit-transform: skew(-3deg) rotate(-3deg);
+  transform: skew(-3deg) rotate(-3deg);
+}
+
+.s-p::after {
+  right: 20px;
+  -webkit-transform: skew(3deg) rotate(3deg);
+  transform: skew(3deg) rotate(3deg);
+}
+
+.s-p--body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  cursor: url(data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATZJREFUOE+V0iFLBFEUhuH3iMEk/gCDmMQohk1iMBlERBaDiCz+AMMGgygWs1HEaBCDiIhBjEYxiBhlg8EgJoNh8ZOznLsM4+zM7i0T5p7nfufca5LMzLaBCUn+HWgZsA9sAp/AF3AC3En67kdy4ABYAeaBBrAITAF1SQ9ViEULl8CjpEMvMLNl4BRYk3RfhiRgCWhKmkubzWwBOK9CEjACvAJ7ks4GQTpAxJ7x4QFbkq6KEKAFvEn67f5PQCA14KYEGQKufdgJ6SbInPgPMbPZSDcG/AA1Sc+dQ7MJihDgPVfsA/+Q9NITyLUzDIzGyV7sN7UDrEu6KEwQwKS/DSDFTsW7kbQNrPYEAjkGNoB8ceq2VQoEMg349J8Abye72pVAZrB1wB9ZFrntG4g03soRMB430/gD8XyX8GrNk68AAAAASUVORK5CYII=), default;
+  background: aqua;
+}
+
+.s-p--body canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+  border: 0.1px solid #1f26875e;
+}
+
+
+.s-p--footer {
+  color: #C3C3C3;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 8px;
+  font-weight: 900;
+}
+
+.description {
+  color: #777;
+  margin-bottom: 5px;
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+.s-p--actions {
+  display: -moz-inline-grid;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.s-p {
+  margin: auto;
+  height: auto;
+}
+
+.s-p--body {
+  min-height: 360px;
+}
+
+.start {
+  min-height: 360px;
+  text-align: center;
+  margin: 0% auto;
+  z-index: 1000;
+  position: relative;
+  cursor: pointer;
+}
+
+.start button {
+  margin: 30%;
+}
+
+.s-p--actions {
+  overflow: hidden;
+}
+
+.s-p--actions>div:first-child {
+  float: left;
+}
+
+.s-p--actions>div:last-child {
+  float: right;
+}
+
+.color-palette {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  padding: 8px;
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.color-palette .theme-color {
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.color-palette .theme-color:not(:last-child) {
+  margin-bottom: 10px;
+}
